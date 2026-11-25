@@ -1,0 +1,168 @@
+{
+  "schema": "raon-player/1",
+  "name": "로컬 플레이어 데모",
+  "media": [
+    {
+      "id": "demo-0",
+      "name": "움직임 테스트 패턴",
+      "path": "motion.mp4"
+    },
+    {
+      "id": "demo-1",
+      "name": "빨강 컷 테스트",
+      "path": "red.mp4"
+    },
+    {
+      "id": "demo-2",
+      "name": "파랑 컷 테스트",
+      "path": "blue.mp4"
+    },
+    {
+      "id": "demo-3",
+      "name": "알파 영상 01",
+      "path": "alpha0.webm"
+    },
+    {
+      "id": "demo-4",
+      "name": "알파 영상 02",
+      "path": "alpha1.webm"
+    },
+    {
+      "id": "demo-5",
+      "name": "알파 영상 03",
+      "path": "alpha2.webm"
+    },
+    {
+      "id": "demo-6",
+      "name": "알파 영상 04",
+      "path": "alpha3.webm"
+    }
+  ],
+  "cues": [
+    {
+      "id": "demo-cue-0",
+      "mediaId": "demo-0",
+      "name": "01 · 로컬 테스트 영상",
+      "layer": 0,
+      "in": 0,
+      "out": 3,
+      "mode": "loop",
+      "auto": false
+    },
+    {
+      "id": "demo-cue-1",
+      "mediaId": "demo-3",
+      "name": "02 · 알파 레이어 1",
+      "layer": 0,
+      "in": 0,
+      "out": 2,
+      "mode": "loop",
+      "auto": false
+    },
+    {
+      "id": "demo-cue-2",
+      "mediaId": "demo-4",
+      "name": "03 · 알파 레이어 2",
+      "layer": 1,
+      "in": 0,
+      "out": 2,
+      "mode": "loop",
+      "auto": false
+    },
+    {
+      "id": "demo-cue-3",
+      "mediaId": "demo-5",
+      "name": "04 · 알파 레이어 3",
+      "layer": 2,
+      "in": 0,
+      "out": 2,
+      "mode": "loop",
+      "auto": false
+    },
+    {
+      "id": "demo-cue-4",
+      "mediaId": "demo-6",
+      "name": "05 · 알파 레이어 4",
+      "layer": 3,
+      "in": 0,
+      "out": 2,
+      "mode": "loop",
+      "auto": false
+    },
+    {
+      "id": "demo-red",
+      "mediaId": "demo-1",
+      "name": "06 · 빨강 컷 전환",
+      "layer": 0,
+      "in": 0,
+      "out": 3,
+      "mode": "once",
+      "auto": false
+    },
+    {
+      "id": "demo-blue",
+      "mediaId": "demo-2",
+      "name": "07 · 파랑 컷 전환",
+      "layer": 0,
+      "in": 0,
+      "out": 3,
+      "mode": "once",
+      "auto": false
+    }
+  ],
+  "layers": [
+    {
+      "enabled": true,
+      "opacity": 1,
+      "mute": true,
+      "fit": "contain",
+      "x": 0,
+      "y": 0,
+      "scale": 1
+    },
+    {
+      "enabled": true,
+      "opacity": 1,
+      "mute": true,
+      "fit": "contain",
+      "x": 0,
+      "y": 0,
+      "scale": 1
+    },
+    {
+      "enabled": true,
+      "opacity": 1,
+      "mute": true,
+      "fit": "contain",
+      "x": 0,
+      "y": 0,
+      "scale": 1
+    },
+    {
+      "enabled": true,
+      "opacity": 1,
+      "mute": true,
+      "fit": "contain",
+      "x": 0,
+      "y": 0,
+      "scale": 1
+    }
+  ],
+  "views": [
+    "pgm",
+    "pvw",
+    "layer0",
+    "layer1",
+    "layer2",
+    "layer3",
+    "pgm",
+    "pvw",
+    "layer0",
+    "layer3"
+  ],
+  "output": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 60
+  }
+}

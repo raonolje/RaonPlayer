@@ -1,0 +1,27 @@
+{
+  "name": "raon-local-player",
+  "productName": "Raon Local Player",
+  "version": "0.11.0",
+  "description": "Offline multi-layer video cue player",
+  "private": true,
+  "type": "module",
+  "main": "src/main.cjs",
+  "scripts": {
+    "postinstall": "node node_modules/electron/install.js",
+    "start": "electron .",
+    "test": "node --test tests/core.test.mjs",
+    "test:e2e": "node tests/e2e.mjs",
+    "test:loops": "node tests/isolation-stress.e2e.mjs",
+    "test:hard": "node tests/isolation-functional.e2e.mjs",
+    "test:soak": "node tests/isolation-stress.e2e.mjs",
+    "package": "electron-packager . RaonLocalPlayer --platform=win32 --arch=x64 --out=../player-windows-v0.11 --icon=src/assets/raon-player.ico --asar.unpackDir=src/demo --overwrite --ignore=^/tests --ignore=^/work",
+    "test:extreme": "node tests/isolation-stress.e2e.mjs",
+    "test:preview": "node tests/preview-pipeline.e2e.mjs",
+    "test:pressure": "node tests/cache-pressure.e2e.mjs"
+  },
+  "devDependencies": {
+    "@electron/packager": "19.0.1",
+    "electron": "45.0.0",
+    "playwright": "^1.64.1"
+  }
+}
